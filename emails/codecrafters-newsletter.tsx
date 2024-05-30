@@ -38,7 +38,7 @@ export const CodeCrafterskNewsletter: React.FC<CodeCrafterskNewsletterProps> = (
       <Html>
         <Head />
         <Preview>Introducing Build your own Shell</Preview>
-        <Body className="mx-auto bg-white font-sans">
+        <Body className="mx-auto bg-gray-50 font-sans">
           <Container className="mx-auto max-w-xl">
             <Section className="mt-8">
               <Link href={URL}>
@@ -50,45 +50,128 @@ export const CodeCrafterskNewsletter: React.FC<CodeCrafterskNewsletterProps> = (
                 />
               </Link>
             </Section>
-            <Text className="mb-4 text-xl leading-7 text-black">
-              Hey {userID}!
-            </Text>
-            <Text className="mb-4 text-xl leading-7 text-black">
-              Today, we have 3 major announcements to make.
-            </Text>
-            <Heading className="mx-0 my-[30px] p-0 text-3xl font-bold text-gray-900">
-              New Challenge: Build your own Shell
-            </Heading>
-            <Text className="mb-4 text-xl leading-7 text-black">
-              We just launched Build your own Shell.
-            </Text>
-            <Text className="mb-4 text-xl leading-7 text-black">
-              Get your hands dirty with shell command parsing, process management and the inner workings of a POSIX-compliant shell.
-            </Text>
-            <Section className="mb-4 mr-12 rounded bg-gray-200 px-[43px] py-[23px]">
-              <Text className="text-center align-middle text-3xl">
-                {userID}
+            <Section className="mt-4">
+              <Heading className="text-3xl font-bold text-gray-900">
+                CodeCrafters - Newsletter
+              </Heading>
+              <Text className="text-lg leading-7 text-black">
+                Hey {userID}!
+              </Text>
+              <Text className="text-base leading-7 text-black">
+                Today, we have 3 major announcements to make.
               </Text>
             </Section>
-            <Text className="mb-3 text-xl leading-7 text-black">
-              Thank you for choosing Code Crafters!
-            </Text>
-            <Text className="text-sm leading-6 text-black">
-              If you have any questions or need assistance, feel free to&nbsp;
-              <a
-                href="mailto:hello@codecrafters.io"
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-              >
-                reach out
-              </a>.
-              <br />
-             
-            </Text>
-            <Text className="text-sm leading-6 text-black text-center">
-            Yours sincerely,
-              <br />
-              — Sarup & Paul.
-            </Text>
+            <Section className="mt-4 bg-gray-200 p-4 rounded-lg">
+              <Heading className="text-3xl font-bold text-gray-900">
+                1. New Challenge: Build your own Shell
+              </Heading>
+              <Img
+                  src="http://localhost:3000/static/challenge.jpg"
+                  width="600"
+                  height="315"
+                  alt="CodeCrafters, Inc."
+              />
+              <Text className="mb-4 text-xl leading-7 text-black">
+                We just launched <b>Build your own Shell</b>.
+              </Text>
+              <Text className="mb-4 text-base leading-7 text-black">
+                Get your hands dirty with shell command parsing, process management and the inner workings of a POSIX-compliant shell.
+              </Text>
+              <Link href="https://app.codecrafters.io/courses/shell/overview">
+                Check out the Challenge →
+              </Link>
+              <Text className="text-sm leading-7 text-black relative rounded-full px-3 py-1 text-gray-600 ring-1 ring-gray-900/10 text-center">
+                For readers of this newsletter, use&nbsp;
+                <span className="inline-flex items-center rounded-md bg-pink-400/10 px-1 py-1 text-xs font-medium text-pink-400 ring-1 ring-inset ring-pink-400/20">
+                  MAY2024
+                </span>
+                &nbsp;to enjoy 50% off our 3 month and 1 year plan.
+                Valid only for the first 50 upgrades, so get it fast.                
+              </Text>
+            </Section>
+            <Section className="mt-4 bg-gray-200 p-4 rounded-lg">
+              <Heading className="text-3xl font-bold text-gray-900">
+                2. New language Track: Gleam
+              </Heading>
+              <Img
+                  src="http://localhost:3000/static/language-track.jpg"
+                  width="600"
+                  height="315"
+                  alt="CodeCrafters, Inc."
+              />
+              <Text className="mb-4 text-xl leading-7 text-black">
+                The Gleam language is now supported on the Redis and SQLite challenges, with more coming soon.
+              </Text>
+              <Text className="mb-4 text-base leading-7 text-black">
+                On the Redis challenge, you can watch screencasts by Louis Pilford, the creator of Gleam.
+              </Text>
+              <Link href="https://app.codecrafters.io/tracks/gleam">
+                Try the Gleam Track →
+              </Link>
+            </Section>
+            <Section className="mt-4 bg-gray-200 p-4 rounded-lg">
+              <Heading className="text-3xl font-bold text-gray-900">
+                3. Updates from the Community
+              </Heading>
+              <Img
+                  src="http://localhost:3000/static/community.jpg"
+                  width="600"
+                  height="315"
+                  alt="CodeCrafters, Inc."
+              />
+              <Text className="text-xl leading-7 text-black">
+                Miscellaneous news from the community:
+                <ul className="list-disc list-inside">
+                <li className="text-base leading-7 text-black">
+                  The Coding Sloth shared&nbsp;
+                  <Link href="https://www.youtube.com/watch?v=jTJvyKZDFsY&ab_channel=TheCodingSloth">
+                    20 cool project ideas
+                  </Link>
+                  &nbsp;for programmer
+                </li>
+                <li className="text-base leading-7 text-black">
+                  Isaac Harris-Holt released a video about&nbsp;
+                  <Link href="https://www.youtube.com/watch?v=jTJvyKZDFsY&ab_channel=TheCodingSloth">
+                    the simplicity of Gleam
+                  </Link>                  
+                </li>
+                <li className="text-base leading-7 text-black">
+                  Kodaps Academy talked about&nbsp;
+                  <Link href="https://www.youtube.com/watch?si=9Ecp7JTPANmoqoPm%3Fr%3D4vS&v=wKAsZImDtak&feature=youtu.be">
+                    why Zig pays more
+                  </Link>    
+                </li>
+              </ul>
+              </Text>
+            </Section>
+            <Section className="mt-4">
+            <Button
+              href="https://app.codecrafters.io/catalog"
+              className="rounded-md bg-slate-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm"
+            >
+              Join the best engineers in the world →
+            </Button>
+            </Section>
+            <Section className="mt-4">
+              <Text className="mb-3 text-xl leading-7 text-black">
+                Thank you for choosing Code Crafters!
+              </Text>
+              <Text className="text-sm leading-6 text-black">
+                If you have any questions or need assistance, feel free to&nbsp;
+                <a
+                  href="mailto:hello@codecrafters.io"
+                  className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                >
+                  reach out
+                </a>.
+                <br />
+              </Text>
+              <Text className="text-sm leading-6 text-black text-center">
+                Yours sincerely,
+                <br />
+                — Sarup & Paul.
+              </Text>
+            </Section>
             <Section>
               <Row className="mb-8 w-full pl-2 pr-2">
                 <Column className="w-4/6">
