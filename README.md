@@ -1,6 +1,6 @@
-# React Email Starter
+# React Email - CodeCrafters
 
-A live preview right in your browser so you don't need to keep sending real emails during development.
+A sample newsletter template built with React and Tailwind CSS for [CodeCrafters](https://codecrafters.io/).
 
 ## Getting Started
 
@@ -8,16 +8,12 @@ First, install the dependencies:
 
 ```sh
 npm install
-# or
-yarn
 ```
 
 Then, run the development server:
 
 ```sh
 npm run dev
-# or
-yarn dev
 ```
 
 Open [localhost:3000](http://localhost:3000) with your browser to see the result.
